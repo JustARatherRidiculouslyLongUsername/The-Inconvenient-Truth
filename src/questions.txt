@@ -1,0 +1,235 @@
+1: {
+    question: "Switch from hand production to machines?",
+    Yes: {
+        resources:0,
+        money:+2,
+        pollution: +1,
+        happiness: -1,
+        message: "production ramps up due to tech advancements, but pollution increases, a few people lose jobs since machines replace them.",
+        next: 2
+    },
+    No: {
+        resources:0,
+        money:-1,
+        pollution: -1,
+        happiness: +1,
+        message: "things remain same and technological advancements do not take place hence the profit was reduced due to increase in labor charges.",
+        next: 7
+    },
+},
+
+2: {
+    question: "start mining using explosives?",
+    Yes: {
+        resources: +2,
+        money: +1,
+        pollution: +1,
+        happiness:-1, 	
+        message: "more metal ores can be obtained due to explosives, but the dust and smoke kicked up causing pollution and difficulty in breathing.",
+        next: 3,
+    },
+    No: {
+        resources:	-1,
+        money: -2,
+        pollution: -1,
+        happiness:0,	
+        message: "mining becomes difficult without explosives because ores get deeper and harder to mine, but the environment remains safe.",
+        next: 4
+    },
+},
+		
+3: {
+    question: "A new method to manufacture steel is invented, use it?",
+    Yes: {
+        resources:+1,
+        money:+5,
+        pollution: +3,
+        happiness: +2,  
+        message: "steel revolutionizes the world in production, but it causes major pollution due to the poisonous gases.",
+    },
+    No: {
+        resources:-1,
+        money:-2,
+        pollution: -2,
+        happiness: +1,
+        message: "declining causes a drop in profits and production, but it keeps the environment safe.",
+    },
+},
+
+5: {
+    question: "create the railway network?",
+    Yes: {
+        resources:-1,
+        money:+4,
+        pollution:+3,
+        happiness:+4,
+        message: "railway networks revolutionizes transport but causes massive pollution due to usage of coal in steam engines.",
+    },
+    No: {
+        resources:0,
+        money:-2,
+        pollution:0 ,
+        happiness:-1,
+        message: "no railways takes a hit on transport and causes drop in exchange of resources and transport but keeps pollution in control.	",
+    },
+},
+
+8: {
+    question: "Coal resources are depleting but Petroleum is discovered, Use it?",
+    Yes: {
+        resources:+3,
+        money: +3,
+        pollution:-1,
+        happiness:+2,
+        message: "petroleum is a very efficient fuel and cleaner than coal.",
+    },
+    No: {
+        resources:-1,
+        money: -2,
+        pollution:+1,
+        happiness:0,
+        message: "coal resources' extensive usage causes pollution to rise. And also strains the coal supply.",
+    },
+},
+
+12: {
+    question: "Bicycles are invented, Use them?",
+    Yes: {
+        resources:-1,
+        money:+1 ,
+        pollution:-1,
+        happiness:+2,  
+        message: "bicycles are a good way to go around and reduce pollution due to steam locomotives.",
+    },
+    No: {									 
+        message: "Nothing happens.",
+    },
+},
+
+9: {
+    question: "Use petroleum based locomotives?",
+    Yes: {
+        resources:-1,
+        money: +3,
+        pollution:+3,
+        happiness:+2,
+        message: "locomotives allow fast and easy transport but it increases the emissions of CO2 and CO.",
+    },
+
+    No: {
+        resources:0,
+        money: -1,
+        pollution:-2,
+        happiness:-1,
+        message: "not using petroleum based locomotives takes a toll on transport and causes losses but keeps emissions caused by petroleum low.",
+    },
+},
+
+17)electricity is invented, create thermal powerplants to generate it?
+Yes: resources: -1, money: +2, pollution: +2, happiness: +2		:electricity is another revolutionary idea after steel, but its generation causes pollution in large amounts.
+No:	resources: +1, money: -2, pollution:0, happiness:0 			:since electricity wasnt used, technological advancements cannot be made, Game over in the 1900s.
+
+
+
+13)A war has broken out, increase arms production?
+Yes: resources:-3, money:-3, pollution:+3, happiness:-1 :arms production keeps the country safe but takes a major hit on the economy and pollution.
+No: unaffected 											:foreign countries captured you, game over in the 1900s.
+
+
+16)Test and develop nuclear weapons?
+Yes: resources: -3, money:-3 , pollution:+5, happiness: -2	:nuclear weapons act as a fearful detterent but their fallout and radiation greatly affects the atmosphere.
+No: happiness:+2											:choosing to not develop nuclear weapons helps the world to maintain a healthy state.
+
+
+18)The war has ended and computers are invented, use them?
+Yes: resources: -1, money: +5, pollution:+2, happiness:+4	:computers have made life easier but increase in e waste and heat emissions of electric devices causes the climate to get worse.
+No:	  unaffected 											:since electricity wasnt used, technological advancements cannot be made, Game over in the 1950s.
+
+
+19)Increase settlements due to growth in population, clear land and forests?
+Yes: resources: -1, money: +2, pollution: +3, happiness: +2		:people get more land to occupy and thrive but it creates a rise in global warming.
+No:  resources: 0,  money: -1, pollution: -1, happiness: -2		:people are not getting enough accomodations which leads to a civil war, GAME OVER in the 1990s.
+
+
+20)Due to increasing population, demand in goods is increasing, exploit resources to meet the demands?
+Yes: resources:-4, money: +3, pollution: +3, happiness: +2	:people's needs are met but at the cost of the resources.
+No:	 resources:0,  money:-1,  pollution: -1, happiness:	-1	:people are dissatisfied by the lack of supply but resources are used aptly.
+
+
+21)Increase farming activities using nitrogen fertilizers?
+Yes: resources: +2, money: +2, pollution: +3, happiness: +2 	:use of fertilizers increases food production, however nitrogen based fertilizers create nitrous oxide contributing to an increase in global warming.
+No:	 resources: -1, money: -1, pollution: 0, happiness: -1		:nature remains safe but at the cost of food shortages.										
+
+													
+
+22)Use solar energy to replace fossil fuels?
+Yes: resources: +2, money: -4, pollution: -4, happiness: +2		:solar energy being an expensive investment helps the environment and the resources greatly in the long run.
+No:  resources: 0, money:0, pollution:+1, happiness:0			:continuing to use fossil fuels might deplete them.
+
+
+
+23)There is an excessive rise in computer demands, increase production?
+Yes: resources: -1, money:+2, pollution: +3, happiness: +2	:Technological demands are met but disposing the e-waste creates lots of poisonous gases like Co2, PBB, PBDE.
+No:  resources: +1, money:-1, pollution: 0,  happiness:-1   :people are dissatisfied due to lack of supply, but global warming is kept in control.
+
+
+
+25)replace petroleum based vehicles with electric vehicles?
+Yes: resources:+1, money: -3, pollution: -4, happiness: -1   :using electric cars is a viable solution for the environment, but an expensive one.
+No:	 resources:-2, money:0, pollution:+1, happiness: 0		 :keeping up the usage of petroleum vehicles will be a cheap short term solution, but in the long run, fossil fuels will be depleted.
+
+
+26)Do you wish to help save the planet by reducing the global warming?
+Yes:
+Definitely yes:
+
+<conclusion para>
+END
+
+27)Please contribute to saving our planet
+Go to question 26
+
+
+
+24)fossil fuels are depleted, huge rise in pollution is detected.
+
+22.question.
+
+Yes: 22.Yes.
+No: energy crises causes war to break out, game over in 2010s.
+
+
+
+
+
+					
+15)Coal resources ran out and the world was left in a polluted state, GAME OVER in the 1870s
+
+
+				
+14)Go to question 8
+
+
+
+			
+6)Metal resources have been depleted.
+Go to question 4
+
+
+
+4)cut down forests to meet up demands of wood for tools and machinery?
+Yes: resources:+2, money:+2, pollution:+3, happiness: -2	:cutting down forests gives tons of wood supply but causes soil erosion, more generation of co2 due to less trees.
+No:	 resources:-2, money:-2, pollution:-3, happiness: +1	:lack of resources causes major decline in supply of wood along with production and wealth but the environment remains safe and healthy due to trees.
+
+			
+10)metal ores are required to develop more machinery.
+Go to question 2
+
+		
+11)Go to question 7
+
+
+7)Due to increasing labour costs and less production, profits are going down and factories are closing, do you want to switch to machines?
+Yes:money:+2, happiness: -1, pollution: +1		: production ramps up due to tech advancements, but pollution increases, a few people lose jobs since machines replace them. 
+Go to question 2
+No: GAME END, final score : 1800s, No technological advances.

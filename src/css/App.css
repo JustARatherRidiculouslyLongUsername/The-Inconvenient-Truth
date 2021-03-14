@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Vollkorn:ital,wght@0,600;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+h1 {
+  font-family: "Syne Mono";
+  font-size: 5rem;
+  margin: 0 auto;
+  color: #ddd;
+}
+
+
+:root {  
+  --debug-border: 3px dotted tomato;
+  --sidebar-padding: 20px;
+  --tile-size: 200px;
+
+	--type-quote: Vollkorn;
+	--accent-color: hsl(322deg 85% 65%);
+	--quote-bg: hsl(0 0% 97%);
+}
+
+#root, main.App {
+  width: 100%;
+  height: 100%;
+}
+
+main.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: var(--background-primary);
+  overflow: hidden;
+}
+
+.Container {
+  flex: 0 0 content;
+  /* border: var(--debug-border); */
+  background-color: var(--background-primary);
+}
+
+.Resources {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Question {
+  height: 40vh;
+  width: 80vw;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  color: var(--interactive-hover);
+
+  background-color: var(--background-accent);
+}
+
+.Sidebar {
+  background-color: var(--background-tertiary);
+  border-radius: 20px;
+
+  position: absolute;
+  top: var(--sidebar-padding);
+  right: var(--sidebar-padding);
+  width: clamp(200px, 20vw, 250px);
+  height: calc(100% - 2 * var(--sidebar-padding));
+
+  z-index: 1;
+}
+
+.Tile {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  border-radius: 10px;
+
+  background-color: var(--background-secondary-alt);
+  transition: background-color 200ms ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  cursor: pointer;
+  
+  color: #ddd;
+}
+
+.Tile:hover {
+  background-color: var(--background-accent);
+}

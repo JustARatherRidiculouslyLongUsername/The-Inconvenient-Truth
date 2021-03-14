@@ -1,0 +1,14 @@
+.ReactModal__Overlay {
+  z-index: 3;
+}
+
+blockquote {
+	position: relative;
+	margin: 40px 0;
+	padding: 3.5em 2.4em 4.2em 2.4em;
+	font: italic 2rem var(--type-quote);
+	background: var(--quote-bg) no-repeat left / var(--quote-image-width);
+	border-radius: var(--border-rad);
+	/* box-shadow: 2px 2px 4px hsl(0 0% 0% / 20%); */
+	text-align: center;
+}
