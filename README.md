@@ -4,7 +4,7 @@
 This is a fully interactive experience revolving around climate change, where the player has free will and manages several resources. The choices made by the player impact the flow of the game, and ultimately, its outcome.
 
 ### Contributors
-- Viswas Haridas
+- [Viswas Haridas](https://github.com/JustARatherRidiculouslyLongUsername)
 - [Rushikesh Patade](https://github.com/Rushour0)
 - Rugved Borade
 
