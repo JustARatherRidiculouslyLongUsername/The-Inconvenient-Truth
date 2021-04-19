@@ -5,7 +5,7 @@ This is a fully interactive experience revolving around climate change, where th
 
 ### Contributors
 - Viswas Haridas
-- Rushikesh Patade
+- [Rushikesh Patade](https://github.com/Rushour0)
 - Rugved Borade
 
 
